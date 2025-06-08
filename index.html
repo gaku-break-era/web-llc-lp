@@ -84,9 +84,9 @@
             --accent-gold: #f59e0b;
             
             --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --text-muted: #64748b;
-            --text-light: #94a3b8;
+            --text-secondary: #1e293b;
+            --text-muted: #475569;
+            --text-light: #64748b;
             
             --surface-primary: #ffffff;
             --surface-secondary: #f8fafc;
@@ -173,6 +173,12 @@
                 --text-secondary: #cbd5e1;
                 --text-muted: #94a3b8;
             }
+            
+            .hero .subtitle,
+            .hero .description {
+                color: var(--text-primary);
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+            }
         }
 
         /* Background effects */
@@ -226,7 +232,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            background: linear-gradient(135deg, var(--primary-gray-50) 0%, var(--primary-white) 50%, var(--primary-gray-100) 100%);
+            background: linear-gradient(135deg, var(--primary-white) 0%, var(--primary-gray-50) 50%, var(--primary-gray-100) 100%);
             overflow: hidden;
             padding-top: 120px;
         }
@@ -457,24 +463,28 @@
             background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
             color: white;
             box-shadow: var(--shadow-medium);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .btn-primary:hover {
             background: linear-gradient(135deg, var(--accent-blue-light), var(--accent-blue));
             transform: translateY(-2px);
             box-shadow: var(--shadow-xl);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .btn-secondary {
             background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));
             color: white;
             box-shadow: var(--shadow-medium);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .btn-secondary:hover {
             background: linear-gradient(135deg, var(--accent-cyan-light), var(--accent-cyan));
             transform: translateY(-2px);
             box-shadow: var(--shadow-xl);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
         }
 
         .btn-outline {
@@ -581,17 +591,19 @@
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 16px;
-            color: var(--text-secondary);
+            color: var(--text-primary);
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
         .hero .description {
             font-size: 18px;
             margin-bottom: 40px;
-            color: var(--text-muted);
+            color: var(--text-primary);
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
             line-height: 1.7;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .hero-ctas {
@@ -618,7 +630,9 @@
             align-items: center;
             gap: 8px;
             font-size: 14px;
-            color: var(--text-muted);
+            color: var(--text-primary);
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         .social-proof-number {
@@ -890,9 +904,10 @@
         .section-subtitle {
             text-align: center;
             font-size: 20px;
-            color: var(--text-secondary);
+            color: var(--text-primary);
             max-width: 700px;
             margin: 0 auto 64px;
+            font-weight: 500;
         }
 
         /* Problem cards */
